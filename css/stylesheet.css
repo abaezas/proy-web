@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(0, 0, 0);
+ }
+
+.item-carousel{
+    height: 652px;
+    width: 100%;
+}
+
+.img-carousel{
+    height: 100%;
+}
