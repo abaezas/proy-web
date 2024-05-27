@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="elementos/iconos/css/all.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm fixed-top" style="background-color: #dfc18b;">
+    <div class="container-fluid w-100">
+      <a class="navbar-brand" href="inicio.html">
+        <img src="imagenes/logos/Marianela_logo.png" width="60px" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Jabones
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Jabones Artesanales</a></li>
+              <li><a class="dropdown-item" href="#">Jabones líquidos</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Cursos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" aria-disabled="false">Contacto</a>
+          </li>
+        </ul>
+
+        <img src="imagenes/cartas/Lavanda.png" alt="" style="padding-right: 1rem;">
+        <a href="carrito.html" class="text-reset" style="padding-right: 1%;"><i
+            class="fa-solid fa-cart-shopping carrito"></i></a>
+        <form class="d-flex" role="search">
+          <input class="form-control me-3" type="search" placeholder="Buscar" aria-label="Search"
+            style="border-color: black;">
+          <button class="btn btn-light me-2" style="border-color: black;" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div id="Carrusel" class="carousel slide" style="padding-top: 6rem;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#Carrusel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#Carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#Carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="imagenes/carrusel/OIP.jpg" class="d-block w-100 c-img img-fluid" alt="...">
+        <div class="carousel-caption">
+          <h3>Jabón de Lavanda</h3>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="imagenes/carrusel/jabon-artesanal-avena.jpg" class="d-block w-100 c-img img-fluid" alt="...">
+        <div class="carousel-caption">
+          <h3>Jabón de Avena y Miel</h3>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="imagenes/carrusel/jabon-de-menta.jpg" class="d-block w-100 c-img img-fluid" alt="...">
+        <div class="carousel-caption">
+          <h3>Jabón de Menta</h3>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#Carrusel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#Carrusel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-md-4 bajo-carrusel">
+        <div>
+          <h3>HECHOS CON AMOR</h3>
+        </div>
+      </div>
+
+      <div class="col-md-4 bajo-carrusel">
+        <div>
+          <h3>HECHOS CON EL ALMA</h3>
+        </div>
+      </div>
+
+      <div class="col-md-4 bajo-carrusel">
+        <div>
+          <h3>HECHOS CON CARIÑO</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 ">
+    <div class="row ">
+      <div class="col-md-12 text-center">
+        <h1>JABONES MÁS POPULARES</h1>
+        <div class="text-end"><a href="#" class="text-reset" style="padding-right: 5%;">Ver más Jabones</a></div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center">
+          <img class="card-img-top img-fluid" alt="img1" src="imagenes/cartas/jabon-artesanal-avena.jpg">
+          <div class="card-body">
+            <div class="card-heading">
+              <h3>Jabón 1</h3>
+            </div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit neque, mollitia dolorem.
+            </p>
+            <button class="btn-carta">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center">
+          <img class="card-img-top img-fluid" alt="img1" src="imagenes/cartas/Lavanda (1).png">
+          <div class="card-body">
+            <div class="card-heading">
+              <h3>Jabón 1</h3>
+            </div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit neque, mollitia dolorem.
+            </p>
+            <button class="btn-carta">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center">
+          <img class="card-img-top img-fluid" alt="img1" src="imagenes/cartas/soap-43077091280.jpg">
+          <div class="card-body">
+            <div class="card-heading">
+              <h3>Jabón 1</h3>
+            </div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit neque, mollitia dolorem.
+            </p>
+            <button class="btn-carta">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center">
+          <img class="card-img-top img-fluid " alt="img1" src="imagenes/cartas/OIP (4).jpg">
+          <div class="card-body">
+            <div class="card-heading">
+              <h3>Jabón 1</h3>
+            </div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit neque, mollitia dolorem.
+            </p>
+            <button class="btn-carta">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid fondo-curso">
+    <div class="container pt-5 pb-5">
+      <div class="row inner-text">
+        <div class="col-md-6 text-light">
+          <h3>CURSOS PARA APRENDER</h3>
+          <h1 class="mt-4">JABONES ARTESANALES</h1>
+          <a href="cursos.html" class="btn btn-lg text-light mt-3 btn-cursos"> REGISTRATE AHORA </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section>
+    <div class="categorias w-100 text-center">
+      <div class="row mb-5">
+        <div class="col-4 ">
+          <a href="" class="text-reset">
+            <div class="card text-bg-dark img-sec">
+              <img src="imagenes/cartas/jabon-liquido-logo.jpg" class="card-img-top img-carta" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Jabones Líquidos</h5>
+              </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-4 ">
+        <a href="" class="text-reset">
+          <div class="card text-bg-dark img-sec">
+            <img src="imagenes/cartas/jabon-artesanal-logo.jpg" class="card-img-top img-carta" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Jabones Artesanales</h5>
+            </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card text-bg-dark img-sec">
+        <a href="" class="text-reset">
+          <img src="imagenes/cartas/logo-curso-jabon.jpg" class="card-img-top img-carta" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Cursos para Aprender</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+    <footer style="background-color:#dfc18b ;">
+      <section class="d-flex justify-content-center p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span>Acércate a nosotros en nuestras redes sociales:</span>
+        </div>
+
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-soap me-3"></i>Jabones meraki
+              </h6>
+              <p>
+                <img src="imagenes/logos/Marianela_logo.png" alt="">
+              </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Productos
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Jabón Artesanal</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Jabón Líquido</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Cursos</a>
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Utilidades
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Cotizar</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Nostros</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Pedidos</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset"></a>
+              </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+              <p><i class="fas fa-home me-3"></i> Villa Alemana, <br> Las Palmas del Rocío 169, Chile</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                jabon.meraki@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 56 9 9615 0184</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="inicio.html">Jabones Meraki</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
