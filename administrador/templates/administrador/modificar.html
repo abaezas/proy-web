@@ -1,0 +1,35 @@
+{% extends 'administrador/base.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+{% load crispy_forms_filters %}
+
+{% block title %}   Inicio Admin    {% endblock %}
+
+{% block content %}
+
+<div class="row ">
+    <div class="col-md-12 text-center" style="margin-top: 8rem;">
+        <h2>MODIFICAR PRODUCTOS</h2>
+    </div>
+</div>
+
+
+<div class="row d-flex justify-content-center" style="margin-top: 2rem; margin-bottom: 4rem;">
+    <div class="col-12 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="d-flex justify-content-evenly">
+                        <input type="submit" value="Guardar" class="btn btn-success">
+                        <a href="{% url 'listarProd' %}"><input type="text" value="Cancelar" class="btn btn-danger"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
