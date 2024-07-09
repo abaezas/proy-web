@@ -7,7 +7,7 @@ def home(request):
 
     productos = Producto.objects.all()
     context = {
-        'producto' : productos
+        'productos' : productos
     }
 
     return render(request, 'tienda/inicio.html', context)
