@@ -75,7 +75,7 @@ TEMPLATES = [
 ]
 
 LOGIN_REDIRECT_URL = 'inicioAdmin'
-LOGOUT_REDIRECT_URL = 'inicio'
+LOGOUT_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'jabonesMeraki.wsgi.application'
 

@@ -20,3 +20,10 @@ class Producto(models.Model):
 
     def __str__(self):
         return self.nombre
+    
+class Carrito(models.Model):
+
+    
+
+    def __str__(self):
+        return self.id
