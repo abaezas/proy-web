@@ -26,6 +26,11 @@ def productos(request):
 
     return render(request, 'tienda/productos.html', context)
 
-def carrito(request):
-    return render(request, 'tienda/carrito.html')
+def producto(request,id):
+    
+    producto = Producto.objects.get(id=id)
+    return render(request, 'tienda/producto.html', {'producto' : producto})
 
+def checkout(request):
+
+    return render(request, 'tienda/checkout.html')
